@@ -1,0 +1,109 @@
+body {
+  background: linear-gradient(
+      180deg,
+      rgba(130, 238, 139, 0.521),
+      rgba(238, 130, 238, 0.507)
+    ),
+    url("../images/background-image.webp") no-repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+}
+
+#description,
+h1 {
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+  background-color: grey;
+  overflow: hidden;
+  background: rgba(99, 15, 177, 0.5);
+  min-width: 400px;
+  max-width: 700px;
+}
+
+label {
+  display: block;
+}
+
+.field1 input,
+#dropdown {
+  display: block;
+  margin: 5px 0 17px 0px;
+  height: 30px;
+  padding: 0px 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+#name,
+#email {
+  width: 80%;
+}
+
+.inline {
+  display: inline;
+}
+
+.field2 p {
+  margin: 0;
+}
+
+.small {
+  font-size: 14px;
+  font-style: italic;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  border: none;
+  height: 17px;
+  width: 17px;
+  padding: 0;
+}
+
+textarea {
+  width: 90%;
+  height: 8vh;
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+fieldset:last-of-type {
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: none;
+}
+
+input[type="submit"] {
+  width: 40%;
+  display: block;
+  margin: 20px auto;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(
+    rgba(0, 128, 0, 0.74),
+    rgba(0, 255, 98, 0.74),
+    rgba(0, 128, 0, 0.74)
+  );
+  font-family: "Itim", "cursive";
+  font-size: 20px;
+  color: rgb(27, 6, 54);
+}
+
+/*Header and decription does not adhere to max/max width*/

@@ -1,0 +1,156 @@
+body {
+  position: relative;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  background: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Arial, sans-serif;
+    color: #333333;
+}
+
+#main {
+  margin: 20px auto 30px;
+  background: #eeeeee;
+  border-radius: 5px;
+  border: 1px #eeeeee solid;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+    text-align: center;
+  font-size: 2.5em;
+  margin-top: 45px;
+}
+
+h1 + p {
+    text-align: center;
+  margin: 0;
+}
+
+#img-div {
+  background: #ffffff;
+  height: auto;
+  width: 95%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#image {
+    display: block;
+  max-width: 100%;
+  margin: 10px auto;
+}
+
+#img-caption {
+  text-align: center;
+}
+
+/*------------------------------------*/
+
+#tribute-info {
+    padding: 30px;
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+#tribute-info > h2 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bold::after {
+  content: " - ";
+  font-weight: normal;
+}
+
+#tribute-info li {
+  margin: 20px auto;
+  line-height: 1.8em;
+}
+
+.quote p {
+  font-style: italic;
+  padding-left: 30px;
+}
+
+.quote p:last-of-type {
+  text-indent: 40px;
+}
+
+.read-more {
+  text-align: center;
+  margin: 0 auto 40px;
+  font-size: 1.2em;
+  padding: 0 20px;
+}
+
+.read-more>p {
+    display: inline-block;
+    border: 1px #333333 dashed;
+}
+
+a:hover {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 460px){
+  body {
+    padding: 0;
+  }
+
+  #main {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+  }
+
+  h1 {
+    margin: 0 auto;
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 0.95em;
+  }
+
+  #img-caption {
+    font-size: 0.88em;
+  }
+
+  #tribute-info {
+    padding: 20px;
+  }
+
+  #tribute-info li {
+    line-height: 1.5em;
+    list-style: none;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  .read-more p {
+    font-size: 0.8em;
+  }
+
+  .quote p:last-of-type {
+    text-indent: 15px;
+  }
+}
