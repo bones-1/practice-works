@@ -1,24 +1,25 @@
+
 body {
-  background: linear-gradient(
+  color: black;
+  padding: 0px;
+  margin: 0 auto;
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  max-width: 1180px;
+    background: linear-gradient(
       180deg,
       rgba(130, 238, 139, 0.521),
       rgba(238, 130, 238, 0.507)
     ),
-    url("../images/background-image.webp") no-repeat;
-  background-repeat: no-repeat;
+    url("../images/background-image.webp") no-repeat right bottom;
   background-attachment: fixed;
-  color: black;
-  padding: 0px;
-  margin: 0px;
-  height: 100vh;
-  font-family: "Nunito", sans-serif;
-  font-size: 20px;
 }
 
 #description,
 h1 {
   text-align: center;
   font-family: "Exo 2", sans-serif;
+  margin-top: 0px;
 }
 
 form {
@@ -105,5 +106,3 @@ input[type="submit"] {
   font-size: 20px;
   color: rgb(27, 6, 54);
 }
-
-/*Header and decription does not adhere to max/max width*/
