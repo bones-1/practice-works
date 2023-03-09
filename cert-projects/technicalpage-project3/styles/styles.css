@@ -1,0 +1,68 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+/*I initially had #navbar where .links was, but this caused overflow to not work as it should. I am guessing that the reason behind this is related to the fact that #navbar has been removed from the document flow. So to resolve this, i stopped looking at the parent(container) and adjusted the child's overflow instead.*/
+.links,
+#main-doc {
+  overflow: scroll;
+  height: inherit;
+}
+
+#navbar {
+  height: inherit;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  border-right: 2px solid grey;
+}
+
+#main-doc {
+  margin-left: 300px;
+}
+
+#navbar>header {
+  box-sizing: border-box;
+  padding-left: 10%;
+  position: absolute;
+  top: 0px;
+  height: 70px;
+  background-color: white;
+  width: 100%;
+}
+
+h1 {
+  margin: 10px auto;
+}
+
+table {
+  margin-top: 70px;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+tr,
+td {
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 10%;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  height: 45px;
+}
+
+a, a:visited {
+  color: rgb(90,90,90);
+  text-decoration: none;
+}
+
+
+TODO: fonts
