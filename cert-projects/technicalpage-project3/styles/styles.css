@@ -6,6 +6,8 @@ body {
   padding: 0px;
   position: relative;
   color: rgb(80, 80, 80);
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5rem;
 }
 
 /*I initially had #navbar where .links was, but this caused overflow to not work as it should. I am guessing that the reason behind this is related to the fact that #navbar has been removed from the document flow. So to resolve this, i stopped looking at the parent(container) and adjusted the child's overflow instead.*/
@@ -41,7 +43,10 @@ body {
 }
 
 h1 {
-  margin: 10px auto;
+  margin: 0px auto;
+  line-height: 70px;
+  font-size: 1.8rem;
+  font-weight: normal;
 }
 
 table {
@@ -51,29 +56,32 @@ table {
   border-collapse: collapse;
 }
 
-tr,
+
 td {
   height: 100%;
   box-sizing: border-box;
-  padding-left: 10%;
+  padding-left: 30px;
   border-bottom: 1px solid grey;
   border-top: 1px solid grey;
   height: 45px;
 }
 
-/*All <a> elements exept the very last one*/
+/*All <a> elements except the very last one*/
 #navbar a {
   color: inherit;
   text-decoration: none;
 }
 
-header, h1 {
+header {
   font-size: 1.63rem;
   font-weight: normal;
   color: black;
+
 }
-section > header {
-  margin-left: -15px;
+
+section>header {
+  display: flex;
+  padding-top: 10px;
 }
 
 #main-doc {
@@ -83,25 +91,65 @@ section > header {
 
 code {
   box-sizing: border-box;
-  display: inline-block;
-  background-color: rgb(245,245,245);
+  display: block;
+  background-color: rgb(245, 245, 245);
   border-radius: 5px;
-  width: 100%;
+  /*stop overflowing*/
+  width: calc (100% - 10px);
   padding: 15px;
   margin-left: 10px;
   font-size: 0.7rem;
 }
 
-@media screen and (max-width: 800px){
+ul {
+  padding-left: 3.5rem;
+
+}
+
+li {
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 800px) {
   #navbar {
+    overflow: scroll;
+    position: relative;
     height: 280px;
     width: 100%;
-    border-bottom: 3px rgb(90,90,90) solid;
+    border-bottom: 1px rgb(90, 90, 90) solid;
     border-right: unset;
+
   }
 
-  #navbar>header, tr:first-of-type {
+  #navbar>header {
+    text-align: center;
+    padding: 0px;
+  }
+
+  #navbar>header,
+  tr:first-of-type {
     border-bottom: 1px rgb(90, 90, 90) solid;
   }
 
-/*TODO: fonts*/
+  table {
+    margin-top: 70px;
+  }
+
+  td {
+    padding-left: 45px
+  }
+
+  #main-doc {
+    margin: unset;
+    padding: 10px 45px 0px;
+    overflow: unset;
+  }
+
+  section>header {
+    margin-left: -15px
+  }
+
+  #reference {
+    padding-bottom: 125px;
+  }
+}
